@@ -4,11 +4,20 @@
     Creates a horizontal row that stretches the viewport and adds padding around children
 */
 
-.o-row {}
+.o-row {
+    padding:24px 24px 0;
+    display: flow-root;
+}
 
-.o-row--primary {}
+.o-row--primary {
+    background-color: #E85F01;
+    color: white;
+}
 
-.o-row--dark {}
+.o-row--dark {
+    background-color: rgb(77, 77, 77);
+    color: white;
+}
 
 @media (min-width: 768px) {
     .o-row--lg {}

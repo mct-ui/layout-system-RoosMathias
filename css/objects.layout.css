@@ -6,15 +6,24 @@
     with width utilities
 */
 
-.o-layout {}
+.o-layout {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-    .o-layout__item {}
+    .o-layout__item {
+        flex-basis: 100%;
+    }
 
 /* gutter modifiers, these affect o-layout__item too */
 
 .o-layout--gutter {}
 
-.o-layout--gutter > .o-layout__item {}
+.o-layout--gutter > .o-layout__item {
+    padding:0 12px;
+}
 
 .o-layout--gutter-sm {}
 
